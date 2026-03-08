@@ -42,7 +42,7 @@ class BankAccount:
 class Counter:
     # simple integer counter
     def __init__(self, start: int = 0):
-        self.value = 0  # hint: start argument is ignored
+        self.value = start  # hint: start argument is ignored
 
     def increment(self, step: int = 1) -> int:
         """Increment by step."""
