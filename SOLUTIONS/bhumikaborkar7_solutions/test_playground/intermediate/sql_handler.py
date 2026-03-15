@@ -73,8 +73,7 @@ def update_item(item_id: int, name: str = None, price: float = None) -> bool:
     conn.commit()
     affectedrows= cur.rowcount
     conn.close()
-    return affectedrows> 0  # hint: better to check affected rows
-
+    return affectedrows > 0  # hint: better to check affected rows
 
 def delete_item(item_id: int) -> bool:
     # delete one item row by id
